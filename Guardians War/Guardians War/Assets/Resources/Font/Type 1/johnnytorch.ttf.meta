@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 3a4272c2f465eb8459e3fcab3058b1b2
+timeCreated: 1510151045
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Johnny Torch
+  fontNames:
+  - Johnny Torch
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ccdf4184f6e36e847b4c40ad28542da2
+timeCreated: 1510151045
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Johnny Torch Gradient Italic
+  fontNames:
+  - Johnny Torch Gradient Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

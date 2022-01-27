@@ -1,0 +1,127 @@
+
+{
+  "bundle_id": "com.caniwow.MCDupCCM",
+  "bundle_version": 1.0,
+  "app_store_link": "",
+  "google_store_link": "",
+  "game_center": [
+    
+  ],
+  "inapp": [
+  {
+          "inapp_id": "com.caniwow.testinapp.unlock"
+        },
+        {
+          "inapp_id": "com.caniwow.testinapp.gold"
+        }
+    
+  ],
+  "ads_config": {
+    "chartboot": [
+      {
+        "ios": {
+          "app_id": "5800b03704b0161cb35f8e9d",
+          "app_signature": "d192432e7441d9a05ca9537306ac93bfa3bf693a"
+        },
+        "android": {
+          "app_id": "5800b04df6cd45296e271400",
+          "app_signature": "9359b5551a351434c0642d2fe84f4719e3c1da04"
+        }
+      },
+      {
+        "ios": {
+          "app_id": "5800b0db04b0161cb1540874",
+          "app_signature": "107f280b63f208e8dbaddcf2ea4dee95c5cece35"
+        },
+        "android": {
+          "app_id": "5800b0f043150f1bd2dfb77b",
+          "app_signature": "711b02c65192e15ccda84f98da9622e95853ec4c"
+        }
+      }
+    ],
+    "applovin": [
+      {
+        "key": "mkEAyUsqwlgzB_ez9-OS-s6qM8dmeH0O0FZzkPoe8SbKSFHbEg3DW91tIfdxyeKyuvwcIhFR9smc62DKiGTDQZ"
+      },
+      {
+        "key": "JvHBQK3VTgbnKWgE9euA6eRPpkJ-TuBooS-Do1iFiJ11qhG-L98RoasbI9Zn2mTrDW2_TlFF3GGtzXrIg-lTTa"
+      }
+    ],
+    "unityads": [
+      {
+        "ios": {
+          "app_id": "1170551"
+        },
+        "android": {
+          "app_id": "1170550"
+        }
+      },
+      {
+        "ios": {
+          "app_id": "1170554"
+        },
+        "android": {
+          "app_id": "1170555"
+        }
+      }
+    ],
+    "admob": [
+      {
+        "ios": {
+          "app_id": "ca-app-pub-4678443593114979/5987268649"
+        },
+        "android": {
+          "app_id": "ca-app-pub-4678443593114979/2894201442"
+        }
+      },
+      {
+        "ios": {
+          "app_id": "ca-app-pub-5862695886490009/9923767650"
+        },
+        "android": {
+          "app_id": "ca-app-pub-5862695886490009/6830700452"
+        }
+      }
+    ],
+    "interstitial": [
+      {
+        "ios": {
+          "app_id": "ca-app-pub-4678443593114979/4510535447"
+        },
+        "android": {
+          "app_id": "ca-app-pub-4678443593114979/1417468245"
+        }
+      },
+      {
+        "ios": {
+          "app_id": "ca-app-pub-5862695886490009/8447034450"
+        },
+        "android": {
+          "app_id": "ca-app-pub-5862695886490009/5353967257"
+        }
+      }
+    ],
+    "banner": [
+      {
+        "ios": {
+          "app_id": "ca-app-pub-4678443593114979/3033802244",
+          "position": "b"
+        },
+        "android": {
+          "app_id": "ca-app-pub-4678443593114979/8940735048",
+          "position": "b"
+        }
+      },
+      {
+        "ios": {
+          "app_id": "ca-app-pub-5862695886490009/6970301252",
+          "position": "b"
+        },
+        "android": {
+          "app_id": "ca-app-pub-5862695886490009/3877234055",
+          "position": "b"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d67c86e1318e89e40bdc4cf8ec44835d
+timeCreated: 1516098544
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Pimlico
+  fontNames:
+  - Pimlico
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
