@@ -10,17 +10,36 @@ public class MotherScript : MonoBehaviour {
 	public string inGameName;
 	public float soundMusic;
 	public float soundSfx;
+	public int currentGameMode;
+	public int currentGameSide;
+	[Header("Battle Log")]
+	public int[] playerLog;
+	//0. - tw1 lv.1
+	//1. - tw1 lv.2
+	//2 - tw1 lv.3
+	//3. - tw2 lv.1
+	//4. - tw2 lv.2
+	//5 - tw2 lv.3
+	//6. - tw3 lv.1
+	//7. - tw3 lv.2
+	//8 - tw3 lv.3
+	//9 - lv unit no.1
+	//10 - lv unit no.2
+	//11 - lv unit no.3
+	//12 - lv unit no.4
+
 	// Use this for initialization
 	void Start () {
+		currentGameMode = 0;
+		currentGameSide = 0;
 		Instance = this;
 		DontDestroyOnLoad (this);
-		StartCoroutine(W());
 		Load ();
 		if (inGameName == "") {
 			inGameName = "Distul#" + Random.Range (1000, 9999);
 			Save ();
 		}
-		Debug.Log (inGameName);
+		Debug.Log (Application.persistentDataPath);
 	}
 	Encryptor enc = new Encryptor();
 	public void Save()
@@ -30,12 +49,6 @@ public class MotherScript : MonoBehaviour {
 		savedata.soundMusic = soundMusic;
 		savedata.soundSfx = soundSfx;
 		File.WriteAllText(Application.persistentDataPath + "/GuardiansWar.txt", enc.Encrypt(JsonUtility.ToJson(savedata), "Keyword"));
-	}
-	IEnumerator W()
-	{
-		yield return new WaitForSeconds (1);
-
-		SceneManager.LoadScene (1);
 	}
 	public void Load()
 	{

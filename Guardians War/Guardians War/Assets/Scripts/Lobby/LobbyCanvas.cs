@@ -57,6 +57,7 @@ public class LobbyCanvas : MonoBehaviour {
 
 	public void OnClickExitYes(){
 		PhotonNetwork.Disconnect ();
+		LobbyChat.Instance.chatClient.Disconnect ();
 		Debug.Log ("Disconnected");
 		Application.Quit ();
 	}

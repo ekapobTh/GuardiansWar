@@ -28,7 +28,7 @@ public class CreateRoom : MonoBehaviour {
 			}
 			inputFieldName.Select ();
 			inputFieldName.text = "";
-			MainCanvasManager.Instance.lobbychatObj.SetActive (true);	
+			MainCanvasManager.Instance.lobbychatObj.SetActive (true);	//commendout
 		} else {
 			LobbyCanvas.Instance.roomNameDuration = 3f;
 		}

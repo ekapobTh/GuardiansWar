@@ -18,6 +18,7 @@ public class StoryButton : MonoBehaviour {
 
 	public void OnClickToCredit(){
 		credit.SetActive (true);
+		Credit.Instance.timer = 13f;
 	}
 
 	public void OnClickExit(){

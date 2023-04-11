@@ -5,14 +5,14 @@ using UnityEngine;
 public class PlayerManagement : MonoBehaviour {
 	public static PlayerManagement Instance;
 	private PhotonView PhotonView;
-	private List<PlayerStats> PlayerStats = new List<PlayerStats> ();
+	//private List<PlayerStats> PlayerStats = new List<PlayerStats> ();
 	// Use this for initialization
 	private void Awake () {
 		Instance = this;
 		PhotonView = GetComponent<PhotonView> ();
 	}
 
-	public void AddPlayerStats(PhotonPlayer photonPlayer)
+	/*public void AddPlayerStats(PhotonPlayer photonPlayer)
 	{
 		int index = PlayerStats.FindIndex (x => x.PhotonPlayer == photonPlayer);
 		if (index == -1) {
@@ -27,10 +27,10 @@ public class PlayerManagement : MonoBehaviour {
 			playerStats.Health += value;
 			PlayerNetwork.Instance.NewHealth (photonPlayer, playerStats.Health);
 		}
-	}
+	}*/
 }
 
-public class PlayerStats{
+/*public class PlayerStats{
 	public PlayerStats(PhotonPlayer photonPlayer,int health){
 		PhotonPlayer = photonPlayer;
 		Health = health;
@@ -38,4 +38,4 @@ public class PlayerStats{
 
 	public readonly PhotonPlayer PhotonPlayer;
 	public int Health;
-}
+}*/

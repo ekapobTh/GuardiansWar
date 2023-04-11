@@ -66,7 +66,6 @@ public class LobbyChat : MonoBehaviour , IChatClientListener {
 	public void OnDisconnected()
 	{
 		msgArea.text = "";
-		chatClient.Disconnect ();
 		gameObject.SetActive (false);
 	}
 

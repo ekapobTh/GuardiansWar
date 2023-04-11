@@ -14,6 +14,9 @@ public class Countdown : MonoBehaviour {
 	private bool stat1;
 	// Use this for initialization
 	void OnEnable () {
+		showNum [0].SetActive (false);
+		showNum [1].SetActive (false);
+		showNum [2].SetActive (false);
 		CurrentRoomCanvas.Instance.startStat = true;
 		Instance = this;
 		stat3 = true;
@@ -29,9 +32,9 @@ public class Countdown : MonoBehaviour {
 		}
 		//Debug.Log ("Countnum" + countnum);
 		if (countnum < 0) {
-			showNum [0].SetActive (false);
+			/*showNum [0].SetActive (false);
 			showNum [1].SetActive (false);
-			showNum [2].SetActive (false);
+			showNum [2].SetActive (false);*/
 		} else {
 			countnum -= Time.deltaTime;
 			if (countnum < 0) {
@@ -43,27 +46,27 @@ public class Countdown : MonoBehaviour {
 				stat3 = false;
 				LobbyChat.Instance.chatClient.PublishMessage (LobbyChat.Instance.channelChat.text,count3);
 			}
-			showNum [0].SetActive (true);
+			/*showNum [0].SetActive (true);
 			showNum [1].SetActive (false);
-			showNum [2].SetActive (false);
+			showNum [2].SetActive (false);*/
 		}
 		else if (countnum > 1f && countnum < 2f) {
 			if (stat2) {
 				stat2 = false;
 				LobbyChat.Instance.chatClient.PublishMessage (LobbyChat.Instance.channelChat.text,count2);
 			}
-			showNum [0].SetActive (false);
+			/*showNum [0].SetActive (false);
 			showNum [1].SetActive (true);
-			showNum [2].SetActive (false);
+			showNum [2].SetActive (false);*/
 		}
 		else if (countnum > 0f && countnum < 1f) {
 			if (stat1) {
 				stat1 = false;
 				LobbyChat.Instance.chatClient.PublishMessage (LobbyChat.Instance.channelChat.text,count1);
 			}
-			showNum [0].SetActive (false);
+			/*showNum [0].SetActive (false);
 			showNum [1].SetActive (false);
-			showNum [2].SetActive (true);
+			showNum [2].SetActive (true);*/
 		}
 	}
 

@@ -87,6 +87,7 @@ public class PlayerLayoutGroup : MonoBehaviour {
 
 	public void OnClickLeaveRoom(){
 		PlayerNetwork.Instance.joinRoomNum = 0;
+		LobbyChat.Instance.chatClient.Disconnect ();
 		PhotonNetwork.LeaveRoom ();
 	}
 }

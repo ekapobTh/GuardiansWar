@@ -45,7 +45,7 @@ public class CurrentRoomCanvas : MonoBehaviour {
 
 	//Start and remove room in lobby
 	public void OnClickStartDelayed(){		
-		if (PhotonNetwork.playerList.Length > 1) {
+		if (PhotonNetwork.playerList.Length == 2 || PhotonNetwork.playerList.Length == 4) {
 			if (!PhotonNetwork.isMasterClient) {
 				roomHostDuration = 3f;
 				hostDuration.SetActive (true);
@@ -59,10 +59,4 @@ public class CurrentRoomCanvas : MonoBehaviour {
 			playerDuration.SetActive (true);
 		}
 	}
-
-	/*[PunRPC]
-	private void RPC_Countdown(){
-		startStat = true;
-		countdown.SetActive (true);
-	}*/
 }
